@@ -1,0 +1,41 @@
+*{border:2px solid blue;margin: 10px; font-family: 'font';}
+@font-face {
+    font-family: 'font';
+    src: url("/Roboto.ttf") format("truetype");
+}
+body{display:flex;flex-direction: column; justify-content:space-between;}
+.header{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header .logo{
+    color:aliceblue;
+    font-size: 24px;
+    font-weight: 900;
+}
+a{
+    font-style: none;
+    color:white;
+
+}
+.hero .img{width:200px;height: 200px;}
+.screen-two .Heading{display:flex;justify-content: center;}
+.info-container{display:flex;}
+.hero{
+    display:flex;color:aliceblue;
+    background-color: #1F2937;font-family: 'f';}
+.hero .Heading{
+font-weight:900;font-size: 48px;
+}
+.hero .right img{display:flex;flex:1;width:200px;height:200px; background-color: gray;}
+.footer{background-color: #1F2937;}
+.screen-three{
+    background-color:#e5e7eb;
+}
+.screen-three .Text{
+    font-size: 36px;
+    font-weight: 300;
+    color:#1F2937
+}
