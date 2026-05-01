@@ -1,4 +1,4 @@
-*{border:2px solid blue;margin: 10px; font-family: 'font';}
+*{margin: 5px; font-family: 'font';}
 @font-face {
     font-family: 'font';
     src: url("/Roboto.ttf") format("truetype");
@@ -13,14 +13,22 @@ body{display:flex;flex-direction: column; justify-content:space-between;}
 .header .logo{
     color:aliceblue;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 600;
+    padding:10px;
 }
 a{
-    font-style: none;
     color:white;
+    text-decoration: none;
+    margin:20px;
+
 
 }
-.hero .img{width:200px;height: 200px;}
+.hero .left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+margin-left:100px;}
+.hero .img{width:200px;height: 200px;border-radius: 5%;border:5px solid transparent;}
 .screen-two .Heading{display:flex;justify-content: center;}
 .info-container{display:flex;}
 .hero{
@@ -29,7 +37,20 @@ a{
 .hero .Heading{
 font-weight:900;font-size: 48px;
 }
-.hero .right img{display:flex;flex:1;width:200px;height:200px; background-color: gray;}
+.hero .right img{width:500px;height:500px; background-color: gray;object-fit: cover;}
+.hero button{background-color: #3882f6;color: white;padding:5px; border-radius: 10%; width:90px;font-weight: 300;}
+.screen-two .Heading{
+    font-size: 36px;
+    font-weight:900;
+    color:#1F2937;
+}
+.info img{
+   width:250px;height: 250px;
+   border:5px solid #3882f6;border-radius: 5%;
+}
+.info .text{
+    color:gray;text-align: center;
+}
 .footer{background-color: #1F2937;}
 .screen-three{
     background-color:#e5e7eb;
@@ -37,5 +58,55 @@ font-weight:900;font-size: 48px;
 .screen-three .Text{
     font-size: 36px;
     font-weight: 300;
-    color:#1F2937
+    color:#1F2937;
+    padding: 70px 70px 0px 70px;text-align: center;
+}
+.screen-three .by{
+    color: #1F2937;
+    font-weight: 500;
+    text-align: end;
+    font-size: 28px;
+    padding:0px 40px 20px 20px;
+}
+.screen-four .box{
+    margin:70px;
+    background-color: #3882f6;
+    display:flex;
+    border-radius: 5%;
+    padding:15px;
+
+
+}
+.screen-four .left{
+   flex:2;
+   justify-self: center;
+}
+.screen-four .text{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+.screen-four .subtext{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+.screen-four .right{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+.screen-four button{
+    
+    border: solid 3px white; border-radius: 8%;
+    color:white; background-color: transparent;
+    padding:8px; width:110px;
+    font-weight:400;
+    font-size: medium;
+}
+.footer .text{
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
